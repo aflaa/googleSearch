@@ -6,6 +6,9 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
+/**
+ * GoogleSearch Page Object
+ */
 public class GoogleSearchPage extends GoogleSearchBasePage{
 
     @FindBy(xpath = "//input[@name='btnK']")
@@ -27,6 +30,11 @@ public class GoogleSearchPage extends GoogleSearchBasePage{
     }
 
 
+    /**
+     * Search method put search term to search field.
+     * @param searchTerm
+     * @return GoogleResultPage
+     */
     public GoogleResultPage search(String searchTerm) {
         searchField.sendKeys(searchTerm);
         searchField.sendKeys(Keys.ENTER);

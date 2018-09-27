@@ -6,11 +6,15 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
+import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Optional;
 import org.testng.annotations.Parameters;
 import page.GoogleSearchPage;
 
+/**
+ * GoogleSearchBaseTest class for common methods
+ */
 public class GoogleSearchBaseTest {
 
     GoogleSearchPage googleSearchPage;
@@ -39,10 +43,10 @@ public class GoogleSearchBaseTest {
      * Scenario:
      * -Quit from browser.
      */
-//    @AfterMethod(alwaysRun = true)
-//    public void afterMethod() {
-//        driver.quit();
-//    }
+    @AfterMethod(alwaysRun = true)
+    public void afterMethod() {
+        driver.quit();
+    }
 
     /**
      * setBrowser method check which browser to user for tests.

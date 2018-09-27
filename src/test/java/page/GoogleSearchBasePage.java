@@ -6,6 +6,9 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.openqa.selenium.TimeoutException;
 
+/**
+ * GoogleSearchBase Page Object
+ */
 public class GoogleSearchBasePage {
 
     protected WebDriver driver;
@@ -26,6 +29,7 @@ public class GoogleSearchBasePage {
     protected String getCurrentTitle() {
         return driver.getTitle();
     }
+
     /**
      * waitUntilElementVisible method.
      *

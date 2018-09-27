@@ -9,6 +9,9 @@ import org.openqa.selenium.support.PageFactory;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * GoogleResult Page Object
+ */
 public class GoogleResultPage extends GoogleSearchBasePage {
 
     @FindBy(xpath = "//div[@id='resultStats']")
@@ -59,6 +62,9 @@ public class GoogleResultPage extends GoogleSearchBasePage {
         return SearchReasultList;
     }
 
+    /**
+     * Method navigates to 2nd search page
+     */
     public void goOn2ndPage () {
         secondPageButton.click();
     }

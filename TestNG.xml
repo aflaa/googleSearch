@@ -6,7 +6,7 @@
         <classes>
             <class name="test.GoogleSearchTest">
                 <methods>
-                    <include name="searchTest"/>
+                    <exclude name="searchTest"/>
                     <include name="caseSensitiveSearchTest"/>
                 </methods>
             </class>
